@@ -1,15 +1,14 @@
+
 import express from "express";
 import dotenv from "dotenv";
 import mongoose from "mongoose";
-import cors from "cors";
 import bodyParser from "body-parser";
 import router from "./routes/userRoute.js";
+import cors from "cors"
 const app=express();
 
-//bodypraser is a middleware for parsing the json  data
-
-app.use(bodyParser.json())
 app.use(cors());
+app.use(bodyParser.json())
 dotenv.config();
 
 const PORT =process.env.PORT || 5000;
