@@ -2,9 +2,9 @@ import React from "react";
 
 import { BrowserRouter as Router , Routes , Route } from "react-router-dom";
 
-import Updateuser from "./Updateuser";
+import Updateuser from "./UpdateUser";
 import User from "./User";
-import Createuser from "./Createuser";
+import Createuser from "./CreateUser";
 
 
 const Apps = () => {
