@@ -9,7 +9,6 @@ const UpdateUser = () => {
   const [address, setAddress] = useState("");
   const navigate = useNavigate();
 
-  // Fetch existing user data when component mounts
   useEffect(() => {
     axios
       .put(`http://localhost:3000/api/user/update${id}`)
