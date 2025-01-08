@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import "./styles.css";
 
 const CreateUser = () => {
   const [name, setName] = useState("");
@@ -22,9 +23,9 @@ const CreateUser = () => {
   };
 
   return (
-    <div>
-      <h1>Create user</h1>
-      <form onSubmit={submit}>
+    <div className="create-user-container">
+      <h1 className="page-title">Create User</h1>
+      <form onSubmit={submit} className="create-form">
         <label>Enter your name:</label>
         <input
           type="text"
@@ -46,7 +47,9 @@ const CreateUser = () => {
           value={address}
           onChange={(e) => setAddress(e.target.value)}
         />
-        <button type="submit">Submit</button>
+        <button type="submit" className="submit-btn">
+          Create User
+        </button>
       </form>
     </div>
   );

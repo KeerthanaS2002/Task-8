@@ -11,7 +11,7 @@ const UpdateUser = () => {
 
   useEffect(() => {
     axios
-      .put(`http://localhost:3000/api/user/update${id}`)
+      .get(`http://localhost:3000/api/user/${id}`)
       .then((res) => {
         setName(res.data.name);
         setEmail(res.data.email);
@@ -37,9 +37,9 @@ const UpdateUser = () => {
   };
 
   return (
-    <div>
-      <h1>Update User</h1>
-      <form onSubmit={updateUser}>
+    <div className="update-user-container">
+      <h1 className="page-title">Update User</h1>
+      <form onSubmit={updateUser} className="update-form">
         <label>Enter your name:</label>
         <input
           type="text"
@@ -47,7 +47,7 @@ const UpdateUser = () => {
           value={name}
           onChange={(e) => setName(e.target.value)}
         />
-        <br />
+
         <label>Enter your email:</label>
         <input
           type="email"
@@ -55,7 +55,7 @@ const UpdateUser = () => {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
-        <br />
+
         <label>Enter your address:</label>
         <input
           type="text"
@@ -63,8 +63,8 @@ const UpdateUser = () => {
           value={address}
           onChange={(e) => setAddress(e.target.value)}
         />
-        <br />
-        <button type="submit">Submit</button>
+
+        <button type="submit" className="submit-btn">Update User</button>
       </form>
     </div>
   );
