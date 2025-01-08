@@ -5,7 +5,6 @@ import "./styles.css";
 
 const User = () => {
   const [users, setUsers] = useState([]);
-
   useEffect(() => {
     axios
       .get("http://localhost:3000/api/user/fetch")
@@ -16,7 +15,6 @@ const User = () => {
         console.log(err);
       });
   }, []);
-
   const deleteUser = (id) => {
     if (window.confirm("Are you sure you want to delete this user?")) {
       axios
@@ -31,7 +29,6 @@ const User = () => {
         });
     }
   };
-
   return (
     <div className="user-container">
       <Link to="/create" className="create-user-link">
@@ -70,5 +67,4 @@ const User = () => {
     </div>
   );
 };
-
 export default User;
