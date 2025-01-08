@@ -4,13 +4,11 @@ body {
     margin: 0;
     padding: 0;
   }
-  
   h1.page-title {
     text-align: center;
     color: #333;
     margin-bottom: 20px;
   }
-  
   .create-user-container,
   .update-user-container,
   .user-container {
@@ -21,20 +19,17 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   }
-  
   .create-form,
   .update-form {
     display: flex;
     flex-direction: column;
   }
-  
   .create-form label,
   .update-form label {
     margin-bottom: 10px;
     font-weight: bold;
     color: #555;
   }
-  
   .create-form input,
   .update-form input {
     padding: 10px;
@@ -42,7 +37,6 @@ body {
     border: 1px solid #ddd;
     border-radius: 5px;
   }
-  
   .submit-btn {
     padding: 10px;
     background-color: #007bff;
@@ -52,34 +46,28 @@ body {
     font-weight: bold;
     cursor: pointer;
   }
-  
   .submit-btn:hover {
     background-color: #0056b3;
   }
-  
   .user-container table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
   }
-  
   .user-container th,
   .user-container td {
     padding: 12px 15px;
     text-align: left;
     border-bottom: 1px solid #ddd;
   }
-  
   .user-container th {
     background-color: #007bff;
     color: white;
   }
-  
   .actions {
     display: flex;
     gap: 10px;
   }
-  
   .create-user-link {
     display: block;
     margin-bottom: 20px;
@@ -90,11 +78,9 @@ body {
     text-decoration: none;
     border-radius: 5px;
   }
-  
   .create-user-link:hover {
     background-color: #218838;
   }
-  
   .update-btn {
     background-color: #007bff;
     color: white;
@@ -102,11 +88,9 @@ body {
     text-decoration: none;
     border-radius: 5px;
   }
-  
   .update-btn:hover {
     background-color: #0056b3;
   }
-  
   .delete-btn {
     background-color: #dc3545;
     color: white;
@@ -115,7 +99,6 @@ body {
     border-radius: 5px;
     cursor: pointer;
   }
-  
   .delete-btn:hover {
     background-color: #c82333;
   }
